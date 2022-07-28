@@ -1,0 +1,429 @@
+@charset "UTF-8";
+/************** Import *************/
+/*********Variables photos*************/
+/*********Variables Couleurs*************/
+/************** Import *************/
+/*********Variables photos*************/
+/*********Variables Couleurs*************/
+/************** Principal *************/
+
+
+/************** Principal *************/
+* {
+  width: auto;
+  -webkit-box-sizing: border-box;
+  font-family: "Parisienne", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  cursor: default;
+  background: url("img/Fond du site.jpg") center center/cover;
+  color: #2e1c1c; }
+
+body {
+  font-size: 25px; }
+
+header {
+  width: 1300px;
+  margin: auto; }
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-row: 1 / span 3;
+  background: transparent; }
+
+li {
+  background: transparent; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent; }
+
+.Ctext {
+  font-weight: bold;
+  font-size: 1.5rem; }
+
+.Options {
+  font-size: 0.8rem; }
+
+.container {
+  width: 100%;
+  margin: auto; }
+
+button {
+  border: 0px;
+  cursor: pointer; }
+
+/************** NavBar **************/
+#navbar nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  /* Hide nested */ }
+  #navbar nav .drag {
+    width: 100%;
+    position: relative; }
+    #navbar nav .drag ul {
+      display: none; }
+  #navbar nav .drag:hover {
+    cursor: pointer; }
+  #navbar nav .drag:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: #fcf6f0;
+    width: 150px;
+    margin-top: 1rem;
+    z-index: 1; }
+  #navbar nav .drag:hover ul li {
+    display: block;
+    margin: 1rem; }
+    #navbar nav .drag:hover ul li a {
+      font-size: 1.3rem; }
+  #navbar nav .reseaux {
+    margin: auto 0 auto 0;
+    height: 30px;
+    width: 130px; }
+    #navbar nav .reseaux ul {
+      display: flex;
+      justify-content: space-between; }
+    #navbar nav .reseaux i {
+      cursor: pointer; }
+  #navbar nav .gauche {
+    display: flex;
+    padding-top: 1rem; }
+    #navbar nav .gauche .side {
+      padding: 1rem; }
+  #navbar nav .logonav {
+    background: url("img/logo.png") no-repeat center center/cover;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 5px; }
+  #navbar nav .droit {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem; }
+    #navbar nav .droit .side {
+      margin: 1rem; }
+  #navbar nav .middle {
+    margin: auto 0;
+    padding: 0 1rem;
+    border-right: 1px #2e1c1c solid;
+    border-left: 1px #2e1c1c solid; }
+  #navbar nav .bar-recherche {
+    margin-top: 2rem; }
+    #navbar nav .bar-recherche i:hover {
+      cursor: pointer; }
+    #navbar nav .bar-recherche .Search-bar {
+      width: 10rem;
+      height: 2rem;
+      padding: 0.3rem 0.5rem 0.1rem 1rem;
+      border: inherit;
+      border-radius: 40px;
+      box-shadow: inset 0.1rem 0.2rem 5px rgba(163, 136, 119, 0.3);
+      font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+    #navbar nav .bar-recherche ::placeholder {
+      color: #a38877;
+      font-family: "Parisienne", Arial, Helvetica, sans-serif; }
+    #navbar nav .bar-recherche :focus {
+      outline: transparent; }
+
+/************** Section principal page acceuil **************/
+#Section-1 {
+  margin: 1.5rem auto;
+  display: flex;
+  height: 60rem; }
+  #Section-1 .main-photo {
+    position: relative;
+    width: 50vw;
+    height: 100%;
+    margin-right: 1%;
+    background: url("img/Fond-du-site.jpg") no-repeat center center/cover; }
+    #Section-1 .main-photo .btn {
+      cursor: pointer;
+      padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+      border: 1px solid #857090;
+      color: #857090;
+      border-radius: 40px;
+      position: absolute;
+      top: 50%;
+      left: 38vw;
+      z-index: 3;
+      background: transparent; }
+  #Section-1 .mainD {
+    width: 50vw; }
+    #Section-1 .mainD .container-photo {
+      width: 100%;
+      height: 70%; }
+      #Section-1 .mainD .container-photo .secondary-photo {
+        width: 100%;
+        height: 90%;
+        background: url("img/caramels-papiers.png") no-repeat center center/cover; }
+    #Section-1 .mainD .article {
+      width: 80%;
+      height: 23%;
+      margin: auto; }
+      #Section-1 .mainD .article-text .ponctu {
+        font-weight: bold; }
+      #Section-1 .mainD .article-text .important {
+        font-weight: bold;
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+        font-size: 1.2rem; }
+
+#Section-2 {
+  margin-top: 1.5rem;
+  height: 50rem;
+  display: flex; }
+  #Section-2 .assortiment {
+    width: 50vw; }
+    #Section-2 .assortiment .article {
+      margin: 5% auto;
+      width: 80%;
+      height: 10rem; }
+      #Section-2 .assortiment .article-titre {
+        padding-top: 0.5rem; }
+    #Section-2 .assortiment .carousel {
+      position: relative;
+      width: 40rem;
+      height: 35%;
+      margin: auto; }
+      #Section-2 .assortiment .carousel .flech {
+        height: 20%;
+        width: 5%;
+        top: 40%; }
+        #Section-2 .assortiment .carousel .flech button {
+          width: 100%;
+          height: 100%; }
+          #Section-2 .assortiment .carousel .flech button :hover {
+            cursor: pointer; }
+        #Section-2 .assortiment .carousel .flech-G {
+          position: absolute;
+          left: 0; }
+        #Section-2 .assortiment .carousel .flech-D {
+          position: absolute;
+          right: 0; }
+      #Section-2 .assortiment .carousel .acheter .btn {
+        position: absolute;
+        top: 85%;
+        left: 40%;
+        width: 20%;
+        padding: 0.1rem;
+        border: 1px #2e1c1c solid;
+        background: #2e1c1c;
+        color: white;
+        font-size: 100%;
+        text-align: center; }
+      #Section-2 .assortiment .carousel .acheter .btn:hover {
+        transform: scale(1.1);
+        opacity: 0.5;
+        transition: transform 0.2s ease-in-out; }
+      #Section-2 .assortiment .carousel .bonbons {
+        position: absolute;
+        height: 90%;
+        width: 90%;
+        display: flex;
+        top: 5%;
+        left: 5%; }
+        #Section-2 .assortiment .carousel .bonbons .principal {
+          background-size: 100%; }
+        #Section-2 .assortiment .carousel .bonbons .bonbon {
+          position: absolute;
+          width: 20%;
+          height: 60%;
+          top: 15%; }
+          #Section-2 .assortiment .carousel .bonbons .bonbon-1 {
+            background: url("img/bonbon1.png") no-repeat center center/cover;
+            left: 5%;
+            background-size: 70%; }
+          #Section-2 .assortiment .carousel .bonbons .bonbon-2 {
+            background: url("img/bonbon2.png") no-repeat center center/cover;
+            left: 40%;
+            background-size: 95%; }
+          #Section-2 .assortiment .carousel .bonbons .bonbon-3 {
+            background: url("img/bonbon3.png") no-repeat center center/cover;
+            left: 75%;
+            background-size: 70%; }
+  #Section-2 .main-photo-2 {
+    width: 50vw; }
+    #Section-2 .main-photo-2 .photo-carton {
+      margin: auto;
+      margin-top: 15%;
+      width: 60%;
+      height: 60%;
+      background: url("img/boxmoyen.png") no-repeat center center/cover; }
+
+#Section-3 {
+  height: 50rem; }
+  #Section-3 .products {
+    margin: auto;
+    width: 95vw;
+    height: 30rem;
+    margin-bottom: 15rem; }
+    #Section-3 .products .titre {
+      font-size: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #Section-3 .products .titre .triangle {
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-right-width: 1.5rem;
+        border-left-width: 1.5rem;
+        border-top: 2.5rem solid #2e1c1c;
+        margin-bottom: 1rem; }
+    #Section-3 .products .product {
+      display: flex;
+      justify-content: space-between; }
+      #Section-3 .products .product .Promo-Price {
+        color: #f67b55; }
+      #Section-3 .products .product ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between; }
+        #Section-3 .products .product ul li {
+          position: relative;
+          width: 23%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          #Section-3 .products .product ul li .name {
+            font-size: 1.5rem; }
+          #Section-3 .products .product ul li .barre {
+            position: absolute;
+            left: 0;
+            top: 10px;
+            transform: rotate(-20deg);
+            height: 2px;
+            width: 50px;
+            background: #2e1c1c;
+            z-index: 5; }
+          #Section-3 .products .product ul li .price {
+            position: relative;
+            font-family: "Roboto";
+            font-size: 1.2rem; }
+          #Section-3 .products .product ul li a {
+            border-style: inherit;
+            border: 0px;
+            border-color: white;
+            transition: border 500ms;
+            margin-bottom: 1rem; }
+          #Section-3 .products .product ul li a:hover {
+            border: 1px solid #f67b55; }
+          #Section-3 .products .product ul li .photo {
+            width: 100%;
+            height: 25rem; }
+            #Section-3 .products .product ul li .photo-1 {
+              background: url("img/boiteombre_sans_fond_copie.png") no-repeat center center/cover; }
+            #Section-3 .products .product ul li .photo-2 {
+              background: url("img/orgueil_et_luxure_copie.png") no-repeat center center/cover; }
+            #Section-3 .products .product ul li .photo-3 {
+              background: url("img/envie_et_paresse_copie.png") no-repeat center center/cover; }
+            #Section-3 .products .product ul li .photo-4 {
+              background: url("img/gourmandise_copie.png") no-repeat center center/cover; }
+        #Section-3 .products .product ul .wrap {
+          position: absolute;
+          top: 70px;
+          left: 50%;
+          transform: translateX(-95%) translateY(-28%) rotate(-45deg);
+          height: 0;
+          width: 280px;
+          border-bottom: 50px solid #fff;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          filter: opacity(75%); }
+        #Section-3 .products .product ul .promo {
+          padding: 0;
+          padding: 7px 0;
+          position: relative;
+          left: -5%;
+          text-align: center;
+          width: 13rem;
+          height: 2.5rem;
+          background: transparent; }
+          #Section-3 .products .product ul .promo span {
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            color: #f67b55;
+            background: transparent; }
+
+/************** Footer **************/
+.footer {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  z-index: 0;
+  background: url("img/colorful_candies_jelly_and_marmalade_unhealthy_sweets_copie_4.jpg") no-repeat center center/cover;
+  justify-content: space-between; }
+  .footer-G {
+    position: absolute;
+    background: transparent;
+    top: 15%;
+    left: 4%;
+    width: 22%;
+    height: 85%;
+    border-radius: 5% 5% 0 0;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: saturate(180%) blur(10px); }
+    .footer-G .logo {
+      /*A regler sur un grand ecran*/
+      position: absolute;
+      top: 5%;
+      left: 10%;
+      width: 45%;
+      height: 45%;
+      background: url("img/logo.png") no-repeat center center/cover;
+      z-index: 2; }
+    .footer-G .info {
+      position: absolute;
+      width: 90%;
+      height: 40%;
+      z-index: 2;
+      top: 55%;
+      left: 5%;
+      font-size: 1rem; }
+      .footer-G .info li {
+        padding-left: 5%;
+        margin: auto 0;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        color: #2e1c1c;
+        opacity: 1; }
+  .footer-D {
+    position: absolute;
+    background: transparent;
+    top: 15%;
+    width: 40%;
+    right: 4%;
+    height: 85%;
+    border-radius: 5% 5% 0 0;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: saturate(180%) blur(10px); }
+    .footer-D .categories {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      width: 90%;
+      height: 90%;
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      text-align: center; }
+      .footer-D .categories .sousCat {
+        width: 18%;
+        height: 100%; }
+        .footer-D .categories .sousCat .titre {
+          height: 2rem;
+          font-size: 1.1rem;
+          font-weight: bold; }
+        .footer-D .categories .sousCat li,
+        .footer-D .categories .sousCat a {
+          font-family: "Open Sans", Arial, Helvetica, sans-serif;
+          margin-bottom: 1.5rem; }
+
+/************* Basics *************/
