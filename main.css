@@ -12,7 +12,7 @@
 * {
   width: auto;
   -webkit-box-sizing: border-box;
-  font-family: "Parisienne", Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -42,8 +42,7 @@ a {
   background: transparent; }
 
 .Ctext {
-  font-weight: bold;
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 .Options {
   font-size: 0.8rem; }
@@ -51,10 +50,20 @@ a {
 .container {
   width: 100%;
   margin: auto; }
-
+.article-text {
+  font-family: 'Montserrat', cursive;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  }
+.article-titre {
+  font-family: 'Square Peg', cursive;
+  font-size: 5rem;
+}
 button {
   border: 0px;
   cursor: pointer; }
+
+
 
 /************** NavBar **************/
 #navbar nav {
@@ -123,10 +132,10 @@ button {
       border: inherit;
       border-radius: 40px;
       box-shadow: inset 0.1rem 0.2rem 5px rgba(163, 136, 119, 0.3);
-      font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+      font-family: "Montserrat", Arial, Helvetica, sans-serif; }
     #navbar nav .bar-recherche ::placeholder {
       color: #a38877;
-      font-family: "Parisienne", Arial, Helvetica, sans-serif; }
+      font-family: "Montserrat", Arial, Helvetica, sans-serif; }
     #navbar nav .bar-recherche :focus {
       outline: transparent; }
 
@@ -169,8 +178,7 @@ button {
         font-weight: bold; }
       #Section-1 .mainD .article-text .important {
         font-weight: bold;
-        font-family: "Lato", Arial, Helvetica, sans-serif;
-        font-size: 1.2rem; }
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;}
 
 #Section-2 {
   margin-top: 1.5rem;
